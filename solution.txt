@@ -61,7 +61,20 @@ git ls-files "./*.txt" | wc -l
 
 
 Cuenta el número de apariciones del string et en at.txt dentro de la carpeta lorem. Para ello debes obtener sólo los string buscados y contar las lineas.
-k
+while read line
+do
+echo $(grep -o "et" <<< "$line" | wc -l)
+done < at.txt 
 
 Cuenta el número de apariciones del string et en todos los archivos del directorio lorem-copy.
+count=0
+for i in $ls 
+do
+count += grep "et" $i
+done
+echo $count
+
+
+IMPORTANTE CUANDO SE QUEDA EL TERMINAL PILLADO
+$ rm -f .git/index.lock
 
