@@ -1,0 +1,18 @@
+Hello world
+mkdir new_dir
+rm -r new_dir
+cd lorem cp lorem.txt /home/jbloch3/Documents/Lab_bash-1/lorem-copy/
+cp sed.txt /home/jbloch3/Documents/Lab_bash-1/lorem-copy/; cp at.txt /home/jbloch3/Documents/Lab_bash-1/lorem-copy/
+cat sed.txt
+cat at.txt lorem.txt
+cd ..; cd lorem-copy; head -n3 sed.txt
+echo Homo  >> sed.txt;  echo homini>> sed.txt; echo lupus >> sed.txt   .
+tail -n3 sed.txt
+sed 's/et/ET/' at.txt
+who
+ls *.txt
+cat sed.txt | wc -l
+ls -dq lorem* | wc -l
+grep -i "et" at.txt 
+grep -i "et" at.txt |wc -l
+grep "et" /home/jbloch3/Documents/Lab_bash-1/lorem/ *.txt |wc -l
