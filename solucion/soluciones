@@ -1,0 +1,23 @@
+1.echo "Hello world"
+2.mkdir new_dir
+3.rm -rf new_dir
+4.cp ~/documents/Ironhack/Lab_bash/lorem-copy
+5.head -2 sed.txt
+6.cat sed.txt
+7.cat at.txt ; cat lorem.txt
+8.head -3 sed.txt
+9.tail -3 sed.txt
+10.nano sed.txt #añado frase
+11.tail -1 sed.txt 
+12.sed -i 's/et/ET/g' lorem-copy/at.txt
+13.git config --global --get user.name ; whoami
+14.pwd
+15.ls
+16.cat sed.txt | wc sed.txt
+17.find lorem
+18.grep et at.txt
+19.grep -w "et" *at.txt | wc -l
+20.grep "et" /desktop/ironhack/material_clase/Lab_bash/lorem
+-copy * .txt | wc -l
+
+
