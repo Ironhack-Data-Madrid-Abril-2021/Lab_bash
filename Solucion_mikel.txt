@@ -1,0 +1,43 @@
+echo 'Hello World'
+mkdir 'new_dir'
+rm -r 'new_dir'
+#Copia de archivo en otro directorio
+cp sed.txt /Users/mikel/Documents/Lab_bash/lorem-copy
+#Copia de los otros 2
+cp at.txt /Users/mikel/Documents/Lab_bash/lorem-copy ; cp lorem.txt /Users/mikel/Documents/Lab_bash/lorem-copy
+#Previsualizar sed.txt
+cat sed.txt
+#Previsualizar los otros 
+cat at.txt ; cat lorem.txt
+#3 primeras filas
+head -3 /Users/mikel/Documents/Lab_bash/lorem-copy/sed.txt 
+#3 últimas
+tail -3 /Users/mikel/Documents/Lab_bash/lorem-copy/sed.txt 
+#Añadir texto
+echo 'Homo homini lupus'>>/Users/mikel/Documents/Lab_bash/lorem-copy/sed.txt
+#Visualizarlo
+tail -3 /Users/mikel/Documents/Lab_bash/lorem-copy/sed.txt 
+#Cambiar et por ET
+sed -i '' 's/et/ET/g' /Users/mikel/Documents/Lab_bash/lorem-copy/at.txt
+#Usuarios activos en el sistema
+w
+#Encontrar donde estás
+pwd
+#Encontrar archivos txt
+% find /Users/mikel/Documents/Lab_bash/lorem -name "*.txt"
+#Contar filas de sed.txt
+wc -l /Users/mikel/Documents/Lab_bash/lorem/sed.txt
+#Contar docs que empiezan por Lorem
+ls -d lorem* (esto me saca los archivos, son 2, si hubiese mas un count sería óptimo)
+#Encontrar et en lorem
+grep -o -i et sed.txt | wc -l ; grep -o -i et lorem.txt | wc -l ; grep -o -i et at.txt | wc -l 
+#Contar et en lorem-copy
+grep "et" /Users/mikel/Documents/Lab_bash/lorem-copy/*.txt | wc -l
+
+
+
+
+
+
+
+
