@@ -1,0 +1,248 @@
+1.	Imprime en consola "Hello World"
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Material_Clase (master)
+$ ls
+Material_Clase/  readme.md  semana_1/
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~
+$ cd pp Lab_bash
+bash: cd: too many arguments
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~
+$ cd Lab_bash
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ ls
+README.md  exercices/  inputs/  lorem/  lorem-copy/  outputs/
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ echo "Hello World"
+Hello World
+
+2.	Crea un directorio nuevo llamado new_dir.
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ mkdir "new_dir"
+
+
+3.	Elimina ese directorio.
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ rm -rf new_dir
+
+4.	Copia el archivo sed.txt dentro de la carpeta lorem a la carpeta lorem-copy.
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ ls lorem
+at.txt  lorem.txt  sed.txt
+5.	Muestra el contenido del archivo sed.txt dentro de la carpeta lorem.
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ cp sed.txt  ~/Lab_bash/lorem-copy
+
+
+6.	Muestra el contenido de los archivos at.txt y lorem.txt dentro de la carpeta lorem.
+
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ ls
+at.txt  lorem.txt  sed.txt
+
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ ls
+README.md  exercices/  inputs/  lorem/  lorem-copy/  outputs/
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ cd lorem-copy
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem-copy (master)
+$ ls
+:  lorem.txt  sed.txt
+
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem-copy (master)
+$ cd ..
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ cd lorem
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ ls
+at.txt  lorem.txt  sed.txt
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ cp at.txt ^C
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ cp at.txt  ~/Lab_bash/lorem-copy
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ ls
+at.txt  lorem.txt  sed.txt
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ cd ..
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ cd lorem-copy
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem-copy (master)
+$ ls
+:  at.txt  lorem.txt  sed.txt
+
+7.	Visualiza las primeras 3 linas del archivo sed.txt dentro de la carpeta lorem-copy
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem-copy (master)
+$ nano sed.txt
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem-copy (master)
+$ tail sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+
+
+
+
+
+8.	Visualiza las ultimas 3 linas del archivo sed.txt dentro de la carpeta lorem-copy
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem-copy (master)
+$ nano sed.txt
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem-copy (master)
+$ pwd
+/c/Users/banking12/Lab_bash/lorem-copy
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem-copy (master)
+$ tail sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+Homo homini lupus.
+9.	Añade Homo homini lupus. al final de archivo sed.txt dentro de la carpeta lorem-copy.
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem-copy (master)
+$ nano sed.txt
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem-copy (master)
+$ pwd
+/c/Users/banking12/Lab_bash/lorem-copy
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem-copy (master)
+$ tail sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+Homo homini lupus.
+
+
+
+
+
+
+10.	Sustituye todas las apariciones de et por ET del archivo at.txt dentro de la carpeta lorem a la carpeta lorem-copy. Deberás usar sed.
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ sed -i 's/et/ET/g' lorem-copy/at.txt
+
+11.	Encuentra al usuario activo en el sistema.
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ whoami
+banking12
+Encuentra dónde estás en tu sistema de ficheros
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ ls
+README.md  exercices/  inputs/  lorem/  lorem-copy/  outputs/
+
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ cd lorem
+
+
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ pwd
+/c/Users/banking12/Lab_bash/lorem
+
+
+12.	Lista los archivos que terminan por .txt en la carpeta lorem.
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ ls /c/Users/banking12/Lab_bash/lorem/*.txt
+/c/Users/banking12/Lab_bash/lorem/at.txt  /c/Users/banking12/Lab_bash/lorem/lorem.txt  /c/Users/banking12/Lab_bash/lorem/sed.txt
+
+
+13.	Cuenta el número de lineas que tiene el archivo sed.txt dentro de la carpeta lorem. Tendrás que encadenar cat y wc mediante el pipe |.
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ wc sed.txt
+  8 129 881 sed.txt
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ cd ..
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ cd lorem
+
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ cd ..
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ ls
+README.md  exercices/  inputs/  lorem/  lorem-copy/  outputs/
+
+14.	Cuenta el número de archivos que empiezan por lorem que están en este directorio y en directorios internos
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash (master)
+$ wc -l lorem
+wc: lorem: Is a directory
+0 lorem
+
+
+Encuentra todas las apariciones de et en at.txt dentro de la carpeta lorem.
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ grep -o -i et sed.txt | wc -l ; grep -o -i et lorem.txt | wc -l ; grep -o -i et at.txt | wc -l
+4
+3
+
+15.	Cuenta el número de apariciones del string et en at.txt dentro de la carpeta lorem. Para ello debes obtener sólo los string buscados y contar las lineas.
+
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ grep “et” /Users/mikel/Documents/Lab_bash/lorem-copy/*.txt | wc -l
+grep: /Users/mikel/Documents/Lab_bash/lorem-copy/*.txt: No such file or directory
+0
+16.	Cuenta el número de apariciones del string et en todos los archivos del directorio lorem-copy.
+banking12@DESKTOP-J9AS7UE MINGW64 ~/Lab_bash/lorem (master)
+$ grep -w 'et' * | wc -l
+
+
