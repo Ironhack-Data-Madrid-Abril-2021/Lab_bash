@@ -1,0 +1,95 @@
+Last login: Mon Apr 26 16:18:49 on ttys000
+Last login: Tue Apr 27 12:37:57 on ttys001
+joseignacioacasocastro@MacBook-Air-de-Jose ~ % cd Desktop
+joseignacioacasocastro@MacBook-Air-de-Jose Desktop % cd IRONHACK
+joseignacioacasocastro@MacBook-Air-de-Jose IRONHACK % cd Lab_bash
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % ls
+Material_Clase		lab_list_comprehension	outputs
+README.md		lab_tuple_set_dict-1	soluciones.txt
+exercices		lorem
+inputs			lorem-copy
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % echo "Hello World"
+Hello World
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % mkdir "new_dir"
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % rm -rf new_dir
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % ls lorem
+at.txt		lorem.txt	sed.txt
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % cd ..      
+joseignacioacasocastro@MacBook-Air-de-Jose IRONHACK % ls
+Lab_bash
+joseignacioacasocastro@MacBook-Air-de-Jose IRONHACK % cd Lab_bash
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % ls
+Material_Clase		lab_list_comprehension	outputs
+README.md		lab_tuple_set_dict-1	soluciones.txt
+exercices		lorem
+inputs			lorem-copy
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % cd lorem-copy
+joseignacioacasocastro@MacBook-Air-de-Jose lorem-copy % ls
+at.txt		lorem.txt	sed.txt
+joseignacioacasocastro@MacBook-Air-de-Jose lorem-copy % cd ..
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % cd lorem
+joseignacioacasocastro@MacBook-Air-de-Jose lorem % ls
+at.txt		lorem.txt	sed.txt
+joseignacioacasocastro@MacBook-Air-de-Jose lorem % cp at.txtx /Lab_bash/lorem-copy
+cp: at.txtx: No such file or directory
+joseignacioacasocastro@MacBook-Air-de-Jose lorem % cp at.txt /Lab_bash/lorem-copy
+cp: /Lab_bash/lorem-copy: No such file or directory
+joseignacioacasocastro@MacBook-Air-de-Jose lorem % cd ..
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % nano sed.txt
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % head sed.txt
+head: sed.txt: No such file or directory
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % cd lorem-copy
+joseignacioacasocastro@MacBook-Air-de-Jose lorem-copy % head sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+joseignacioacasocastro@MacBook-Air-de-Jose lorem-copy % tail sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+joseignacioacasocastro@MacBook-Air-de-Jose lorem-copy % pwd
+/Users/joseignacioacasocastro/Desktop/IRONHACK/Lab_bash/lorem-copy
+joseignacioacasocastro@MacBook-Air-de-Jose lorem-copy % nano sed.txt
+joseignacioacasocastro@MacBook-Air-de-Jose lorem-copy % 
+joseignacioacasocastro@MacBook-Air-de-Jose ~ % sed -i 's/et/ET/g' lorem-copy/at.txt
+sed: 1: "lorem-copy/at.txt": extra characters at the end of l command
+joseignacioacasocastro@MacBook-Air-de-Jose ~ % cd Desktop
+joseignacioacasocastro@MacBook-Air-de-Jose Desktop % cd IRONHACK
+joseignacioacasocastro@MacBook-Air-de-Jose IRONHACK % cd Lab_bash
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % cd lorem
+joseignacioacasocastro@MacBook-Air-de-Jose lorem % sed -i 's/et/ET/g' lorem-copy/at.txt
+joseignacioacasocastro@MacBook-Air-de-Jose lorem % cd ..
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % ls
+README.md	exercices	inputs		lorem		lorem-copy	outputs
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % whoami
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % cd lorem
+joseignacioacasocastro@MacBook-Air-de-Jose lorem % pwd
+/Users/joseignacioacasocastro/Desktop/IRONHACK/Lab_bash/lorem
+joseignacioacasocastro@MacBook-Air-de-Jose lorem % ls /Users/joseignacioacasocastro/Desktop/IRONHACK/Lab_bash/lorem/*.txt
+/Users/joseignacioacasocastro/Desktop/IRONHACK/Lab_bash/lorem/at.txt	/Users/joseignacioacasocastro/Desktop/IRONHACK/Lab_bash/lorem/sed.txt
+/Users/joseignacioacasocastro/Desktop/IRONHACK/Lab_bash/lorem/lorem.txt
+joseignacioacasocastro@MacBook-Air-de-Jose lorem % wc sed.txt                                                   
+       8     129     873 sed.txt
+joseignacioacasocastro@MacBook-Air-de-Jose lorem % wc lorem
+joseignacioacasocastro@MacBook-Air-de-Jose lorem % cd ..
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % wc lorem
+wc: lorem: read: Is a directory
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % touch soluciones.txt 
+joseignacioacasocastro@MacBook-Air-de-Jose Lab_bash % >> soluciones.txt
+
+
+
+
+
